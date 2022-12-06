@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Akash web</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+  <style>
+    /* CSS Reset */
+    body {
+      font-family: "Baloo Bhai", cursive;
+      color: white;
+      margin: 0px;
+      padding: 0px;
+      background-color: rgb(77, 70, 70);
+      /* background: url("female3.jpg"); */
+      background-size: 100%;
+      /* background-repeat: no-repeat; */
+      height: fit-content;
+    }
+    .header {
+      position: fixed;
+      width: 100%;
+      top: 0%;
+      height: 80px;
+      margin-top: 0px;
+      border: 1px gray solid;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background-color: #8cb7b3;
+    }
+    .left {
+      display: inline-block;
+      /* border: 2px solid red; */
+      position: absolute;
+      left: 30px;
+      top: 20px;
+    }
+
+    .left img {
+      /* left: 40px; */
+      position: relative;
+      left: 13px;
+      width: 75px;
+      filter: invert(100%);
+      top: -25px;
+    }
+
+    .left div {
+      line-height: 0px;
+      font-size: 16px;
+      position: relative;
+      top: -36px;
+    }
+
+    .mid {
+      display: block;
+      width: 50%;
+      margin: 39px auto;
+      /* border: 2px solid green; */
+    }
+
+    .right {
+      position: absolute;
+      right: 34px;
+      top: 17px;
+      display: inline-block;
+      /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+      display: inline-block;
+      position: relative;
+      top: -30px;
+    }
+
+    .navbar li {
+      display: inline-block;
+      font-size: 20px;
+    }
+
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      padding: 0px 8px;
+      margin: -19px auto;
+      font-family: "Baloo Bhai", cursive;
+    }
+
+    .navbar li a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    .btn {
+      font-family: "Baloo Bhai", cursive;
+      margin: 0px 9px;
+      background-color: black;
+      color: white;
+      padding: 4px 14px;
+      border: 2px solid grey;
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: rgb(31, 30, 30);
+    }
+
+    .container {
+      border: 2px solid white;
+      margin-left: 75px;
+      margin-top: 144px;
+      padding: 75px;
+      padding-top: 30px;
+      padding-bottom: 25px;
+      width: 33%;
+      border-radius: 28px;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+
+    .form-group input {
+      font-family: "Baloo Bhai", cursive;
+      text-align: center;
+      display: block;
+      /* width: 508px; */
+      padding: 1px;
+      border: 2px solid black;
+      margin: 11px auto;
+      font-size: 25px;
+      border-radius: 8px;
+    }
+
+    .container h2 {
+      font-family: "Baloo Bhai", cursive;
+      text-align: center;
+      font-size: 33px;
+    }
+
+    .container button {
+      display: block;
+      width: 74%;
+      margin: 20px auto;
+    }
+    .front img {
+      width: 1260px;
+      position: absolute;
+      z-index: -1;
+      margin-top: -63px;
+      position: fixed;
+      /* opacity: 50%; */
+    }
+  </style>
+
+  <body>
+    <header class="header">
+      <!-- Left box for logo -->
+      <div class="left">
+        <img src="dumbell-removebg-preview.png" alt="" />
+        <div>Akash Fitness</div>
+      </div>
+      <!-- Mid box for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li>
+            <a href="https://www.calculator.net/calorie-calculator.html"
+              >Fitness Calculator</a
+            >
+          </li>
+          <li><a href="hobbies.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Right box for buttons -->
+      <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">
+          <a href="mailto:akashsahabanaul@gmail.com">Email Us</a>
+        </button>
+      </div>
+    </header>
+    <div class="front">
+      <img src="female3.jpg" alt="" />
+    </div>
+    <div class="container">
+      <h2>Join the best gym of Delhi now</h2>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Name" />
+        </div>
+        <div class="form-group">
+          <input type="number" name="" min="18" placeholder="Enter your Age" />
+        </div>
+        <div class="form-group">
+          <input type="" name="" placeholder="Enter your Gender" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Locality" />
+        </div>
+        <div class="form-group">
+          <input type="email" name="" placeholder="Enter your Email Id" />
+        </div>
+        <div class="form-group">
+          <input
+            type="number"
+            name=""
+            max="9999999999"
+            placeholder="Enter your Phone Number"
+          />
+        </div>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+    <br />
+  </body>
+</html>
